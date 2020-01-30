@@ -24,6 +24,7 @@ public class Listing_14_8 extends Application {
         Label label = new Label("Java FX");
         label.setFont(Font.font("Times New Roman", FontWeight.BOLD, FontPosture.ITALIC, 20));
         pane.getChildren().add(label);
+        //pane.getChildren().addAll(circle, label); //alternative way of adding both the circle and the label at the same time
 
         Scene scene = new Scene(pane);
         primaryStage.setTitle("FontDemo");
