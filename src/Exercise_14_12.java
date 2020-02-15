@@ -18,9 +18,9 @@ public class Exercise_14_12 extends Application {
         hBox.setAlignment(Pos.BOTTOM_CENTER);
 
         String[] company = {"Apple", "HTC", "Samsung", "Others"};
-        double[] grade = {20, 26, 28, 26};
+        double[] marketShare = {20, 26, 28, 26};
 
-        double max = getMax(grade);
+        double max = getMax(marketShare);
 
         double height = 100;
         double width = 125;
@@ -29,20 +29,20 @@ public class Exercise_14_12 extends Application {
         pane.setPadding(new Insets(40, 15, 5, 15));
 
         // Create 4 rectangles
-        Rectangle r1 = new Rectangle(0, 0, width, height * grade[0] / max);
+        Rectangle r1 = new Rectangle(0, 0, width, height * marketShare[0] / max);
         r1.setFill(Color.RED);
-        Rectangle r2 = new Rectangle(0, 0, width, height * grade[1] / max);
+        Rectangle r2 = new Rectangle(0, 0, width, height * marketShare[1] / max);
         r2.setFill(Color.BLUE);
-        Rectangle r3 = new Rectangle(0, 0, width, height * grade[2] / max);
+        Rectangle r3 = new Rectangle(0, 0, width, height * marketShare[2] / max);
         r3.setFill(Color.GREEN);
-        Rectangle r4 = new Rectangle(0, 0, width, height * grade[3] / max);
+        Rectangle r4 = new Rectangle(0, 0, width, height * marketShare[3] / max);
         r4.setFill(Color.ORANGE);
 
         // Create 4 Text objects
-        Text t1 = new Text(0, 0, company[0] + " -- " + grade[0] + "%");
-        Text t2 = new Text(0, 0, company[1] + " -- " + grade[1] + "%");
-        Text t3 = new Text(0, 0, company[2] + " -- " + grade[2] + "%");
-        Text t4 = new Text(0, 0, company[3] + " -- " + grade[3] + "%");
+        Text t1 = new Text(0, 0, company[0] + " -- " + marketShare[0] + "%");
+        Text t2 = new Text(0, 0, company[1] + " -- " + marketShare[1] + "%");
+        Text t3 = new Text(0, 0, company[2] + " -- " + marketShare[2] + "%");
+        Text t4 = new Text(0, 0, company[3] + " -- " + marketShare[3] + "%");
 
         hBox.getChildren().addAll(getVBox(t1, r1), getVBox(t2, r2),
                 getVBox(t3, r3), getVBox(t4, r4));
