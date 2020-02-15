@@ -14,7 +14,7 @@ public class Exercise_14_13 extends Application {
         // Create a pane
         Pane pane = new Pane();
 
-        double[] marketShare = {20, 10, 30, 40};
+        double[] marketShare = {20, 26, 28, 26};
 
         String[] company = {"Apple", "HTC", "Samsung", "Others"};
 
